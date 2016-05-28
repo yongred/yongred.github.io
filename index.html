@@ -1,0 +1,321 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style>
+		#MyName{
+			color:#ffffff;
+			font-size:30px;
+			margin-right: 30px;
+			text-shadow: 2px 2px #73ab39;
+			font-family: "Times New Roman";
+		}
+		
+		.navItem{
+			font-family: "Times New Roman";
+			margin-right:30px;
+			margin-left:30px;
+			font-size:20px;
+			font-weight: bold;
+		}
+		
+		.navItem:hover{
+			box-shadow:5px 5px 5px  #777;
+			transform: scale(1.5,1.5);
+			cursor:pointer;
+		}
+
+		
+		#theBody{
+			background-color:#cccccc;
+			background-position:left top;
+			min-height:420px;
+			width:100%
+		}
+		#main{
+			margin-top:50px;
+			background-color:#ffffff;
+			box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
+		}
+
+		.grid{
+			margin-top:20px;
+			background-color:#FFFFFF;
+			min-height:350px;
+			text-align:center;
+			background-size: 100% 400px;
+			background-repeat: no-repeat;
+			padding-top:10px;
+		}
+		
+		.grid .gridLeft{
+			margin:0 auto;
+			min-height:250px;
+		}
+
+		.grid .gridRight{
+			margin:0 auto;
+			min-height:250px;
+
+			display:inline-block;
+			vertical-align:top;
+		}
+		
+		.grid .gridRight div{
+			padding-top:70px;
+			color:#ffffff; 
+			font-size:20px;
+			font-family:"Montserrat";
+			font-weight:bold;
+			text-align:left;
+		}
+		
+		.contact{
+			text-align: left;
+			margin-top:45px;
+			line-height:30px;
+		}
+		
+		#eduHead{
+			font-size:40px;
+			color:lightBlue;
+		}
+		
+		#eduBody td{
+			line-height:35px;
+			font-size:20px;
+		}
+		
+		#skillHead{
+			font-size:40px;
+			color:white;
+		}
+		
+		#skillBody td{
+			line-height:35px;
+			font-size:20px;
+		}
+		
+		#projHead{
+			font-size:40px;
+			color:pink;
+		}
+		
+		#projBody td{
+			line-height:35px;
+			font-size:20px;
+		}
+		
+		#empHead{
+			font-size:40px;
+			color:yellow;
+		}
+		
+		#empbody td{
+			line-height:35px;
+			font-size:20px;
+		}
+		</style>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+		<nav class= "navbar navbar-inverse navbar-fixed-top">
+			<div class= "container">
+			
+				<div class= "navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#NavBar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div id="MyName">Yong D. Liu</div>
+				</div>
+				
+				<div class= "collapse navbar-collapse" id= "NavBar">
+					<ul class="nav navbar-nav">
+						<li><a class="navItem" href="#">Introduction</a></li>
+						<li><a class="navItem" href="#">Education</a></li>
+						<li><a class="navItem" href="#">Skills</a></li>
+						<li><a class="navItem" href="#">Projects</a></li>
+						<li><a class="navItem" href="#">Employments</a></li>
+					</ul>
+				</div>
+				
+			</div> <!-- nav container end-->
+		</nav>
+		
+		<div id= "theBody">
+			<div id = "main" class ="col-md-10 col-md-offset-1">
+				<div class= "grid" style="background-color:CornflowerBlue"> <!-- intro-->
+					<div class = "gridLeft col-md-6">
+						<div class= "contact col-md-10 alert alert-success" role="alert">
+							<strong>Contact Information: </strong> <br>
+							<a href= "mailto:yongding@live.com"> Email: yongding@live.com </a><br>
+							<a href="https://www.linkedin.com/profile/view?id=42601328">LinkIn: Yong D. Liu</a> <br>
+							<a href= "https://github.com/yongred"> GitHub: github.com/yongred </a><br>
+							<a href= "https://www.facebook.com/yongdingliu"> Facebook: Yong D. Liu</a><br>
+							<a href="http://yongdliu.com"> Blog: yongdliu.com</a><br>
+						</div>
+					</div>
+					<div class = "gridRight col-md-6">
+						<div>
+						Hi, My name is Yong D. Liu. I am a third year Computer Science student at Brooklyn College. I'm interested in software, application, or web development. <br>
+						My favorite free time activity is visiting different kind of museums and exercise.
+						</div>
+					</div>
+				</div> <!-- end intro-->
+				
+				<div class='grid' style="background-color:MediumSeaGreen">
+					<table class="table">
+						<thead id= "eduHead"> 
+							<tr>
+								<th colspan="2" style="text-align:center">Education</th> 
+							</tr>
+						</thead>
+						
+						<tbody id= "eduBody">
+							<tr>
+								<td>
+								<strong>Brooklyn College, Brookyn, New York </strong> <br>
+								Bachelor of Science in Computer Science, Expected June 2016 <br>
+								Current GPA: 3.507 on a 4.0 scale
+								</td>
+								<td>
+									<strong>Relevant Courses:</strong><br>
+									Data Structure, Principles Computer Architecture,<br>
+									Object-Oriented Development, Application Design and Implement (in Java),<br>
+									Computer and Ethics, Intro and Advance Programming in C++,<br> Introduction to Discrete Structures, Discrete Mathematics
+
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+                </div>
+				
+				<div class='grid' style="background-color:LightSalmon">
+					<table class="table">
+						<thead id= "skillHead"> 
+							<tr>
+								<th colspan="4" style="text-align:center">Skills</th> 
+							</tr>
+						</thead>
+						
+						<tbody id= "skillBody">
+							<tr>
+								<td>
+								<strong>Programming Languages:  </strong> <br>
+								Java, C++, Assembly,  <br>
+								HTML, CSS, JavaScript <br>
+								familiar with libraries of JQuery and Bootstrap <br>
+								</td>
+								<td>
+									<strong>Operating System:</strong><br>
+									Windows (98, 2000, XP, Vista, 7, 8),<br> Unix, Macintosh
+								</td>
+								<td>
+									<strong>Software:</strong><br>
+									Microsoft Office, Pain.Net, <br>Abode Photoshop, Eclipse, Android Studio, <br>
+									GitHub, WordPress
+								</td>
+								<td>
+									<strong>Language:</strong><br>
+									Speaks English, Mandarin, Cantonese, and Fujian Dialogue.<br> Can write in Chinese and English
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+                </div>
+				
+				<div class='grid' style="background-color:Fuchsia">
+					<table class="table">
+						<thead id= "projHead"> 
+							<tr>
+								<th colspan="2" style="text-align:center">Projects</th> 
+							</tr>
+						</thead>
+						
+						<tbody id= "projBody">
+							<tr>
+								<td>
+								<strong>Software Development:  </strong> 
+								<ul>
+								<li>Developed interactive online checker UI in Java, using WebSocket  </li>
+								<li>Programmed an Asteroids game in Java</li>
+								<li>Developed a basic calculator app in Android, using Android Studio </li>
+								<li>Contributed to a group gaming project “Dunk-A-Prof” by listing the specifications </li>
+								</td>
+								<td>
+									<strong>Web Development:</strong>
+									<ul>
+									<li>Developed my student lab page using Bootstrap</li>
+									<li>Developed a personal blog using WordPress</li>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+                </div>
+				
+				<div class='grid' style="background-color:DarkOrange">
+					<table class="table">
+						<thead id= "empHead"> 
+							<tr>
+								<th colspan="2" style="text-align:center">Employment</th> 
+							</tr>
+						</thead>
+						
+						<tbody id= "empBody">
+							<tr>
+								<td>
+								<strong>Onetel Store Inc. (AT&T Private Store), Brooklyn, NY</strong> <br>
+								<em style="color:pink">AT&T Authorized Retailer</em>
+								<ul>
+								<li>Troubleshot phones and services for the customers who have problem with their devices or services. </li>
+								<li>Convinced indecisive customers by explaining the benefits of using AT&T, and the advantages AT&T have over other companies</li>
+								</td>
+								<td>
+									<strong>Shuang Wen Academy Network, New York, NY</strong><br>
+									<em style="color:pink">Teacher’s Assistant</em>
+									<ul>
+									<li>
+									Provided technical support for the teachers on Windows System and Smartboard</li>
+									<li>Taught students to efficiently use software such as ABC Chinese Input and Microsoft Word</li>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+                </div>
+			</div> <!-- end main-->
+		</div> <!-- end theBody-->
+		
+		<script>
+		$("#theBody").height($("html,body").height());
+		$(".navItem").each(function(e){
+			var item=$(".grid")[e];
+			var top= $(item).offset().top-70;
+			
+			$(this).on({
+				//event.stopPropagation(); 
+				mouseenter: function(){
+					$(item).fadeTo(200,0.5,function(){$(item).fadeTo(200,1)});
+				},
+				click: function(){
+					$("html,body").animate({"scrollTop":top});
+				}
+			});
+
+		});
+
+		</script>
+		
+	</body>
+</html>
