@@ -1,0 +1,341 @@
+
+.main{
+	width: 100%;
+	height: 100%;
+	
+
+}
+
+.header{
+	font-size: 35px;
+	text-decoration: underline;
+	
+	
+}
+
+/* navBar */
+
+.main nav.navigationBar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: rgba(250, 250, 250, .95);
+	height: 100px;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+
+}
+
+.main nav.navigationBar .myName{
+	float: left;
+	margin-left: 40px;
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.main nav.navigationBar .linksContainer{
+	float: right;
+	margin-right: 20px;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.main nav.navigationBar .linksContainer a{
+
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+/* visited link */
+a:visited {
+	color: black;
+}
+
+/* mouse over link */
+a:hover {
+   text-decoration: underline;
+   background-color: #05375A;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+.main nav.navigationBar .dropDown{
+	display: none;
+}
+
+@media screen and (max-width: 1000px){
+	.main nav.navigationBar .dropDown{
+		position: relative;
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+		height: 100%;
+		width: 20%;
+		text-align: center;
+		
+	}
+
+	.main nav.navigationBar .dropDown .dropBtn{
+		width: 40px;
+		cursor: pointer;
+		vertical-align: middle;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+	}
+
+	.main .dropDownContent{
+		margin-top: 100px;
+		position: fixed;
+		background-color: #fafafa;
+		width: 100%;
+	}
+
+	.main nav.navigationBar .dropDown:hover{
+		background-color: #05375A;
+		cursor: pointer;
+	}
+
+	/*
+	.main nav.navigationBar .dropDown:hover .dropDownContent{
+		display: block;
+	}
+	*/
+	.main .dropDownContent a{
+		display: block;
+		text-decoration: none;
+		min-height: 70px;
+		width: 100%;
+	}
+
+	.main .dropDownContent a:hover{
+		background-color: #05375A;
+	}
+
+	
+	.main nav.navigationBar .linksContainer{
+		display: none;
+	}
+}
+
+/* welcome */
+
+.main .welcome{
+	width: 100%;
+	height: 800px;
+	background-image: url("../images/wallpaper_blue.jpg");
+	background-size:cover;                     
+    background-repeat:   no-repeat;
+    text-align: center;
+}
+
+.main .welcome .textBar{
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+	color: #fafafa;
+
+}
+
+.main .welcome .textBar .headIntro{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.main .welcome .textBar .bodyIntro{
+	font-size: 25px;
+}
+
+/* about */
+
+.main .about{
+	width: 100%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	background-color: #dddddd; 
+	text-align: center;
+	
+}
+
+.main .about .body {
+	
+	display:block;
+	overflow:auto;
+}
+
+.main .about .body .bodyElement{
+	width: 28%;
+	height: 300px;
+	display: inline-block;
+	vertical-align:top;
+	margin: 20px; 
+	background-color: #fafafa;
+	padding: 10px;
+	border-radius: 20px;
+	
+}
+
+.main .about .body .bodyElement .title{
+	font-size: 30px;
+	text-align: center;
+}
+
+.main .about .body .bodyElement .content{
+	text-align: left;
+	margin-top: 10px;
+}
+
+.main .about .body #resume .content{
+	text-align: center;
+}
+
+@media screen and (max-width: 1150px){
+	.main .about .body .bodyElement{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.main .about .body .bodyElement{
+		width: 80%;
+		height: 500px;
+	}
+	.main .about .body .bodyElement .content{
+		margin-top: 50px;
+  		font-size: 25px;
+	}
+	.main .about .body .bodyElement .title{
+		margin-top: 20px;		
+	}
+	.main .about .body #resume .content img{
+		width: 200px;
+		height: 300px;
+	}
+}
+
+
+/* portfolio */
+.main .portfolio{
+	width: 100%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	background-color: #eeeeee; 
+	text-align: center;
+}
+
+.main .portfolio .header{
+
+}
+
+.main .portfolio .body{
+	
+	display:block;
+	overflow:auto;
+}
+
+.main .portfolio .body .bodyElement{
+	width: 38%;
+	height: 500px;
+	display: inline-block;
+	vertical-align:top;
+	margin: 20px; 
+	background-color: #fafafa;
+}
+
+@media screen and (max-width: 1000px){
+	.main .portfolio .body .bodyElement{
+		width: 90%;
+		height: 1000px;
+
+	}
+
+	.main .portfolio .body .bodyElement .description{
+		font-size: 35px;
+	}
+}
+
+.main .portfolio .body .bodyElement .image{
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+
+#asteroidsDiv .image{
+	
+	background-image: url("../images/asteroids_cover.png");
+}
+
+#habitloopDiv .image{
+	background-image: url("../images/habitloop_cover.png");
+}
+
+#bubblemanDiv .image{
+	background-image: url("../images/bubbleman_cover.png");
+}
+
+#punchsystemDiv .image{
+	background-image: url("../images/punchsystem_cover.png");
+}
+
+.main .portfolio .body .bodyElement .description{
+	margin-top: 30px;
+}
+
+/* contact */
+.main .contact{
+	width: 100%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	
+	text-align: center;
+}
+
+.main .contact .body{
+	
+	display:block;
+	overflow:auto;
+}
+
+.main .contact .body .bodyElement{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	vertical-align:top;
+	margin: 20px; 
+	background-color: #fafafa;
+	padding: 20px;
+
+}
+.main .contact .body .bodyElement .title{
+	margin-top: 30%;
+}
+.main .contact .body .bodyElement a{
+	font-size: 20px;
+	
+}
+
+
+@media screen and (max-width: 1000px){
+	.main .contact .body .bodyElement{
+		
+
+	}
+}
+
+.main .contact .body .bodyElement .title{
+	font-size: 30px;
+	text-align: center;
+}
+
